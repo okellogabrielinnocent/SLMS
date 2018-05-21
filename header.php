@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <title>SLMS</title>
+        <title>School Lab Monitoring System</title>
  		<link href="images/logo.png" rel="icon" type="image">
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
