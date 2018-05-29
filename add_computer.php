@@ -1,45 +1,37 @@
 <?php include('header.php'); ?>
 <?php include('session.php'); ?>
+    <body >
 
-    <body>
 		<?php include('navbar.php'); ?>
-		        <center><img src="images/topbar.png"></center>
+        <center><img src="images/topbar.png"></center>
         <div class="container-fluid">
             <div class="row-fluid">
 				<?php include('sidebar_add_computer.php'); ?>
-				
-                <div class="span6" id="">
+                <div class="span9" id="">
                      <div class="row-fluid">
                         <!-- block -->
-                        <div id="block_bg" class="block">
-                            <div class="navbar navbar-inner block-header">
-								<?php 
+                        <div  id="block_bg" class="block">
+                         <?php 
 								$query = mysqli_query($connection,"select * from comp_det")or die(mysqli_error());
 								$count = mysqli_num_rows($query);
 								?>
-                                <div class="muted pull-left"><i class="icon-reorder icon-large"></i> Computer List</div>
-                                <div class="muted pull-right">
-									Number of Computers: <span class="badge badge-info"><?php echo $count; ?></span>
-								</div>
-                            </div>
+								<div class="navbar navbar-inner block-header">
+	                                <div class="muted pull-left"><i class="icon-reorder icon-large"></i> Computer List</div>
+	                                <div class="muted pull-right">
+										Number of Computers: <span class="badge badge-info"><?php echo $count; ?></span>
+									</div>
+								</div>                            
                             <div class="block-content collapse in">
-                                <div class="span9">
-
-                                	<!--===================================================================-->
+								<div class="span12" id="studentTableDiv">
+								<h2 id="noch">Computer List</h2>
+									<!--===================================================================-->
                                 	<form action="delete_stud.php" method="post">
 										<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
 											<div class="pull-right">
 											 	<a href="#" onclick="window.print()" class="btn btn-info"><i class="icon-print icon-large"></i> Print List</a> 
 												<a href="add_computers.php" class="btn btn-inverse"><i class="icon-plus-sign icon-large"></i> Add School</a>
 											</div>
-											<!--<a data-toggle="modal" href="#delete_computer" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i> Delete</a>
-											<script type="text/javascript">
-											$(document).ready(function(){
-												$('#delete').tooltip('show');
-												$('#delete').tooltip('hide');
-											});
-											</script>
-												<?php //include('modal_delete.php'); ?>-->
+											
 											<thead>
 											<tr>
 												<th class="empty">No:</th>
@@ -67,7 +59,7 @@
 																							
 											
 											<td class="empty" width="160">
-												<a data-placement="top" title="Click to View all Details" id="view<?php echo $id; ?>" href="view_stud.php<?php echo '?id='.$id; ?>" class="btn btn-warning"><i class="icon-search icon-large"></i> View Computer</a>
+												<a data-placement="top" title="Click to View all Details" id="view<?php echo $id; ?>" href="view_computers.php<?php echo '?id='.$id; ?>" class="btn btn-warning"><i class="icon-search icon-large"></i> View Computer</a>
 												<script type="text/javascript">
 													$(document).ready(function(){
 														$('#view<?php echo $id; ?>').tooltip('show');
@@ -81,8 +73,6 @@
 											</tbody>
 										</table>
 									</form>
-
-                                	
                                 </div>
                             </div>
                         </div>
@@ -93,6 +83,5 @@
 		<?php include('footer.php'); ?>
         </div>
 		<?php include('script.php'); ?>
-    </body>
-
+    </body>	
 </html>
