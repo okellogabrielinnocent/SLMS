@@ -10,7 +10,7 @@
                         <!-- block -->
                         <div  id="block_bg" class="block">
                             <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left"><i class="icon-plus-sign icon-large"></i> Add School</div>
+                                <div class="muted pull-left"><i class="icon-plus-sign icon-large"></i> Add Computer</div>
                                 <div class="muted pull-right"><a id="return" data-placement="left" title="Click to Return" href="schools.php"><i class="icon-arrow-left icon-large"></i> Back</a></div>
 								<script type="text/javascript">
 								$(document).ready(function(){
