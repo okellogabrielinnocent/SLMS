@@ -7,9 +7,7 @@
         <div class="container-fluid">
             <div class="row-fluid">
 				<?php include('sidebar_add_computer.php'); ?>
-				<div class="span3" id="">
-				<?php  include('add_computer1.php');  ?>		   			
-				</div>
+				
                 <div class="span6" id="">
                      <div class="row-fluid">
                         <!-- block -->
@@ -32,7 +30,7 @@
 										<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
 											<div class="pull-right">
 											 	<a href="#" onclick="window.print()" class="btn btn-info"><i class="icon-print icon-large"></i> Print List</a> 
-												
+												<a href="add_computers.php" class="btn btn-inverse"><i class="icon-plus-sign icon-large"></i> Add School</a>
 											</div>
 											<!--<a data-toggle="modal" href="#delete_computer" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i> Delete</a>
 											<script type="text/javascript">

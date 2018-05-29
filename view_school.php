@@ -1,6 +1,7 @@
 <?php include('header.php'); ?>
 <?php include('session.php'); ?>
 <?php $get_id = $_GET['id']; ?>
+<?php $prov=$row['isp_id'];?>
     <body>
 		<?php include('navbar.php'); ?>
 		        <center><img src="images/topbar.png"></center>
@@ -24,7 +25,7 @@
 								
 								?>
 								<div class="alert alert-success">SCHOOL DETAILS</div>
-								<?php $prov=$row['isp_id'];?>
+								
 								Name: <strong><?php echo $row['school_name']; ?></strong><hr>
 								Contact 1: <strong><?php echo $row['contact1']; ?></strong><hr>
 								Contact 2: <strong><?php echo $row['contact2']; ?></strong><hr>
